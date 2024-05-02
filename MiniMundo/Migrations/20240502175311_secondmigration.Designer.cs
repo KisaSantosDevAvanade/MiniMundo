@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MiniMundo.Data;
 
@@ -11,9 +12,11 @@ using MiniMundo.Data;
 namespace MiniMundo.Migrations
 {
     [DbContext(typeof(MiniMundoContext))]
-    partial class MiniMundoContextModelSnapshot : ModelSnapshot
+    [Migration("20240502175311_secondmigration")]
+    partial class secondmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

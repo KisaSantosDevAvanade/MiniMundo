@@ -19,5 +19,6 @@ namespace MiniMundo.Data
         public DbSet<MiniMundo.Models.Funcionario> Funcionario { get; set; } = default!;
         public DbSet<MiniMundo.Models.Produto> Produto { get; set; } = default!;
         public DbSet<MiniMundo.Models.Venda> Venda { get; set; } = default!;
+        public DbSet<MiniMundo.Models.Login> Login { get; set; } = default!;
     }
 }
